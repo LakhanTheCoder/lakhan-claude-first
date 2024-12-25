@@ -25,10 +25,39 @@ main {
 
 section {
     margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
 }
 
 footer {
     text-align: center;
     margin-top: 2rem;
     color: #666;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-item {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
